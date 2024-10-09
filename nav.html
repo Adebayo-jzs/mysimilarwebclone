@@ -1,0 +1,153 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="bootstrap-5.3.3-dist/css/bootstrap.css">
+    <style>
+      nav{
+    background-color: rgb(255,255,255);
+    padding-left: 160px;
+    padding-right: 160px;
+    margin-top: -8px;
+    display: flex;
+    align-items: center;
+    height: 66px;
+    margin-bottom: 0px;
+    position: sticky;
+    top: 0px;
+    z-index: 11;
+    width: 100%;
+}
+@media(max-width:1400px){
+    nav{
+        padding-left: 80px;
+        padding-right: 80px;
+    }
+}
+@media(max-width:1200px){
+    nav ul,nav button,nav a{
+       display: none;
+    }
+}
+ 
+@media(max-width:750px){
+    nav{
+        padding-left: 25px;
+    }
+}
+.shologo{
+    width: 164px;
+}
+nav ul{
+     margin-left: auto;
+     margin-right: auto;
+     margin-top: 15px;
+}
+ 
+nav li a:hover{
+     color: rgb(21,92,255);
+     text-decoration: underline;
+}
+nav li{
+    display: inline;
+    margin-inline-end: 20px;
+}
+nav a{
+    text-decoration: none;
+    color: rgb(30,30,30);
+    font-size: 18px;
+    transition: 1s;
+}
+.log_:hover{
+    color: rgb(21,92,255);
+    text-decoration: underline;
+}
+.cont{
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 10px;
+    padding-right: 10px;
+    color: rgb(255,122,26);
+    margin-right: 15px;
+    background-color: white;
+    border-radius: 20px;
+    border: 1px solid rgb(255,122,26);
+    font-weight: 700;
+    transition: 1s;
+}
+.cont:hover{
+    background-color: rgb(255,122,26);
+    color: blue;
+}
+.gst{
+    padding-top: 8px;
+    padding-bottom: 8px;
+    /* height: 30px; */
+    padding-left: 12px;
+    padding-right: 12px;
+    color: white;
+    font-weight: 700;
+    background-color: rgb(255,122,26);
+    margin-right: 15px;  
+    border-radius: 20px;
+    border: none;
+    transition: 1s;
+}
+.gst:hover{
+    background-color: blue;
+    color: rgb(255,122,26);
+}
+/* @media(min-width:900px){
+    .navbar-toggler{
+        display: none;
+    }
+} */
+    </style>
+</head>
+<body>
+
+     <!-- <nav>
+    
+            <img  class="shologo" src="Screenshot 2024-08-12 221310.png" alt="">
+         <ul class="sholist">
+          <li><a href="">Products</a></li>
+          <li><a href="">Customers</a></li>
+          <li><a href="">Our Data</a></li>
+          <li><a href="">Pricing</a></li>
+          <li><a href="">Resources</a></li>
+           </ul>
+      
+         <button class="cont">Contact Sales</button>
+         <button class="gst">Get Started</button>
+        <a class="log_" href="loginsimilarweb.html" target="_blank">Login</a>
+    </nav> -->
+    <nav class="navbar navbar bg-body-tertiary " style="height: 70px;">
+        <div class="container">
+          <a class="navbar-brand" href="#"><img src="Screenshot 2024-08-12 221310.png" alt="" style="width: 120px;"></a>
+          
+          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+            <div class="offcanvas-header">
+              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+                <ul class="sholis">
+                    <li><a href="">Products</a></li>
+                    <li><a href="">Customers</a></li>
+                    <li><a href="">Our Data</a></li>
+                    <li><a href="">Pricing</a></li>
+                    <li><a href="">Resources</a></li>
+                     </ul>
+                   <button class="cont">Contact Sales</button>
+                   <button class="gst">Get Started</button>
+                  <a class="log_" href="loginsimilarweb.html" target="_blank">Login</a>
+            </div> 
+          </div>
+        </div>
+    </nav>
+      <script src="bootstrap-5.3.3-dist/js/bootstrap.js"></script>
+</body>
+</html>

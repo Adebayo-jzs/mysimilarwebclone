@@ -1,0 +1,145 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background: linear-gradient(to right ,rgb(242,221,211), rgb(191,200,222));
+            padding-top: 20px;
+            /* padding-left: 49px; */
+            font-family: Arial, Helvetica, sans-serif;
+            width: 100%;
+            overflow-x: hidden;
+        }
+        img{
+            width: 140px;
+            height: auto;
+            margin-left: 49px;
+            margin-bottom: 40px;
+        }
+        .container1{
+            /* width: auto; */
+            width: 500px;
+            background-color: white;
+            margin-left: auto;
+            margin-right: auto;
+            /* padding-left: 40px; */
+            /* padding-right: 40px; */
+            border-radius: 8px;
+            /* width: 500px; */
+            /* text-align: center; */
+            padding-top: 100px;
+        }
+        @media(max-width:500px){
+            .container1{
+                width: 100%;
+            }
+        }
+        @media(max-width:500px){
+            body{
+                background: none;
+                padding-top: 0px;
+            }
+        }
+        .emc{
+            width: 60%;
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: 40px;
+        }
+        @media(max-width:500px){
+            .emc{
+                width: 90%;
+            }
+        }
+        .emd{
+            width: 60%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        @media(max-width:500px){
+            .emd{
+                width: 90%;
+            }
+        }
+         
+        input[type=email]{
+            width: 100%;
+            border-radius: 5px;
+            height: 40px;
+            border: 1px solid rgba(0, 0, 0, 0.137) ;
+            /* opacity: 0.25; */
+            margin-top: 13px;
+            outline: none;
+        }
+        input[type=password]{
+            width: 100%;
+            border-radius: 5px;
+            height: 40px;
+            border: 1px solid rgba(0, 0, 0, 0.137) ;
+            /* opacity: 0.25; */
+            margin-top: 13px;
+            outline: none;
+            margin-bottom: 30px;
+        }
+        span{
+            color: red;
+        }
+        .fp a{
+            text-decoration: none;
+            
+        }
+        .fp a:hover{
+            text-decoration: underline;
+        }
+        input[type=submit]{
+            width: 100%;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            border: none;
+            background-color: rgb(255,122,26);
+            border-radius: 5px;
+            cursor: pointer;
+            transition: 1s;
+            margin-top: 30px;
+        }
+        input[type=submit]:hover{
+            background-color: rgb(193,201,221);
+            color: rgb(255,122,26);
+        }
+        @media(max-width:500px){
+            .container1 h1{
+                font-size: 26px;
+                margin-top: -120px;
+                margin-bottom: 30px;
+            }
+        }
+        @media(max-width:500px){
+            img{
+                 margin-left: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <img src="app_logo.ACDN5BSI.svg" alt="">
+    <div class="container1">
+        <h1 style="text-align: center; ">Log In to Similarweb <br> Platform</h1>
+        <div class="emc" >
+            <label for="businessEmail" style="color: rgba(0, 0, 0, 0.537);">Business Email <span>&#42</span> </label>
+            <input type="email" id="businessEmail" style="display: block;">
+        </div>
+        <div class="emd"   >
+            <label for="password" style="color: rgba(0, 0, 0, 0.537);">Password  <span>&#42</span></label>
+            <div class="pasd">
+                <input type="password" id="password">
+            </div>
+            <div class="fp" style="text-align: end;">
+                <a href="">Forgot your password?</a>
+            </div>
+            <input type="submit" value="Login">
+        </div>
+    </div>
+</body>
+</html>
